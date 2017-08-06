@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M-A-P</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <!-- <script src="app/dist/app.min.js"></script> -->
+    <script src="index.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="main_wrapper">
+    <div class="edit_header">
+        Edit page
+    </div>
+    <div class="edit_aboutmaps_tab edit_tabs">
+        <div class="edit_label_about">
+            Edit the <b>"About Us"</b> tab content:
+        </div>
+        <div class="edit_about_textarea">
+            <textarea rows="10" id="aboutus_text" class="textarea_wdth"></textarea>
+        </div>
+    </div>
+    <div id="project_details_holder" class="edit_projects_tab edit_tabs">
+        <div class="each_nws_tab">
+            <div class="news_details">
+                <div class="news_heading">
+                    <span class="lbl_edit lbl_wdth">Project Heading </span>
+                    <span class="inputbox"><input type="text" id="proj_heading" class="maps_twtr ip_style" placeholder="Give me project heading"/></span>
+                </div>
+                <div class="">
+                    <span class="lbl_edit lbl_wdth">Project Details </span>
+                    <span class="inputbox inline_display"><textarea id="project_desc" rows="3" class="text_news"></textarea></span>
+                </div>
+            </div>
+            <div class="Delete_btn">
+                <button class="delete_nws_btn">Delete This Project</button>
+            </div>
+        </div>
+        <div id="add_proj_btn" class="add_news_btn">
+            <button class="add_nws_btn btn_style">Add new projects</button>
+        </div>
+    </div>
+    <div id="news_details_holder" class="edit_projects_tab edit_tabs">
+        <div class="each_nws_tab">
+            <div class="news_details">
+                <div class="news_heading">
+                    <span class="lbl_edit lbl_wdth">News Heading </span>
+                    <span class="inputbox"><input type="text" id="news_heading" class="maps_twtr ip_style" placeholder="Give me project heading"/></span>
+                </div>
+                <div class="">
+                    <span class="lbl_edit lbl_wdth">News Details </span>
+                    <span class="inputbox inline_display"><textarea id="news_desc" rows="3" class="text_news"></textarea></span>
+                </div>
+            </div>
+            <div class="Delete_btn">
+                <button class="delete_nws_btn">Delete This News</button>
+            </div>
+        </div>
+        <div id="add_news_btn" class="add_news_btn">
+            <button class="add_nws_btn btn_style">Add new news</button>
+        </div>
+    </div>
+    <div class="edit_contact_tab edit_tabs">
+        <div class="contact_email each_line">
+            <span class="lbl_edit lbl_wdth">Contact Email</span>
+            <span class="inputbox"><input type="text" id="maps_email" class="maps_email ip_style" placeholder="Give me email address"/></span>
+        </div>
+        <div class="contact_phone each_line">
+            <span class="lbl_edit lbl_wdth">Contact Phone</span>
+            <span class="inputbox"><input type="text" id="maps_phone" class="maps_phone ip_style" placeholder="Give me contact phone number"/></span>
+        </div>
+        <div class="contact_fax each_line">
+            <span class="lbl_edit lbl_wdth">Contact Fax</span>
+            <span class="inputbox"><input type="text" id="maps_fax" class="maps_fax ip_style" placeholder="Give me fax number"/></span>
+        </div>
+        <div class="contact_fbpage each_line">
+            <span class="lbl_edit lbl_wdth">FB Page link</span>
+            <span class="inputbox"><input type="text" id="maps_fb_page" class="maps_fblink ip_style" placeholder="Give facebook page link"/></span>
+        </div>
+        <div class="contact_twitterpage each_line">
+            <span class="lbl_edit lbl_wdth">Twitter Page link </span>
+            <span class="inputbox"><input type="text" id="maps_twtr_page" class="maps_twtr ip_style" placeholder="Give me twitter page link"/></span>
+        </div>
+    </div>
+</div>
+<div id="btn_block">
+    <button id="submit_response" class="finish_btn">Submit Response</button>
+</div>
+</body>
+</html>
